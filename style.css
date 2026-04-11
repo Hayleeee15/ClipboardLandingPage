@@ -1,0 +1,39 @@
+:root {
+    /* Colors */
+    --btn-one-bg-color: hsl(171, 66%, 44%);  /* Green 500 */
+    --btn-two-bg-color: hsl(233, 100%, 69%); /* Blue 100 */
+    --btn-color: hsl(0, 0%, 100%);            /* White */
+    --header-color: hsl(210, 10%, 33%);      /* Gray 700 */
+    --paragraph-color: hsl(201, 11%, 66%);   /* Gray 500 */
+    
+    /* Typography */
+    --ff: 'Bai Jamjuree', sans-serif;
+    --fw: 600;
+
+    --h1-fs: 2rem;
+    --h1-lh: 125%;
+    --h1-ls: -0.03125rem;
+
+    --h2-fs: 1.75rem;
+    --h2-lh: 125%;
+    --h2-ls: -0.03125rem;
+
+    --h3-fs: 1.5rem;
+    --h3-lh: 125%;
+    --h3-ls: -0.025rem;
+
+    --paragraph-fw: 400;
+    --paragraph-fs: 1rem;
+    --paragraph-lh: 150%;
+    --paragraph-ls: 0.009375rem;
+
+    --btn-fs: 1.25rem;
+    --btn-lh: 150%;
+    --btn-ls: 0.03125rem;
+
+    --footer-fs: 1.25rem; 
+    --footer-lh: 150%;
+    --footer-ls: 0.009375rem;
+
+
+}
