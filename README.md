@@ -18,7 +18,6 @@ Built to be responsive depending on device size.
 🔴 CSS Custom Properties
 
 
-
 ### Preview
 
 <div align="left">
@@ -43,6 +42,16 @@ Built to be responsive depending on device size.
 </div>
 
 ## Update Progress
+
+### April 12th, 2026
+
+Established a CSS Reset
+
+Initilized Global Properties
+
+Started from top to bottom adjusting padding as needed
+
+Completed Mobile Design
 
 ### April 10th, 2026
 
