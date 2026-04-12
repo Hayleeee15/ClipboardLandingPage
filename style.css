@@ -1,14 +1,19 @@
 :root {
     /* Colors */
     --btn-one-bg-color: hsl(171, 66%, 44%);  /* Green 500 */
+    --btn-one-shadow-color: hsl(171, 66%, 36%);
     --btn-two-bg-color: hsl(233, 100%, 69%); /* Blue 100 */
-    --btn-color: hsl(0, 0%, 100%);            /* White */
+    --btn-two-shadow-color: hsl(233, 59%, 57%);
+    --btn-color: hsl(0, 0%, 100%);           /* White */
     --header-color: hsl(210, 10%, 33%);      /* Gray 700 */
     --paragraph-color: hsl(201, 11%, 66%);   /* Gray 500 */
+    --footer-bg-color: #F5f7f7;              /* Gray 50 */   
     
     /* Typography */
     --ff: 'Bai Jamjuree', sans-serif;
-    --fw: 600;
+    --fw: 400;
+
+    --header-fw: 600;
 
     --h1-fs: 2rem;
     --h1-lh: 125%;
@@ -22,7 +27,6 @@
     --h3-lh: 125%;
     --h3-ls: -0.025rem;
 
-    --paragraph-fw: 400;
     --paragraph-fs: 1rem;
     --paragraph-lh: 150%;
     --paragraph-ls: 0.009375rem;
@@ -35,3 +39,237 @@
     --footer-lh: 150%;
     --footer-ls: 0.009375rem;
 }
+
+/* #region Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+/* #endregion */
+
+/* #region Global */
+body {
+    font-family: var(--ff);
+    font-size: var(--paragraph-fs);
+    font-weight: var(--fw);
+    color: var(--paragraph-color);
+    text-align: center;
+
+    background: url(./images/bg-header-mobile.png)
+        no-repeat center top;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    color: var(--header-color);
+    font-weight: var(--header-fw);
+}
+
+h1, h2 {
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-size: var(--h1-fs);
+    line-height: var(--h1-lh);
+    letter-spacing: var(--h1-ls);
+}
+
+h2 {
+    font-size: var(--h2-fs);
+    line-height: var(--h2-lh);
+    letter-spacing: var(--h2-ls);
+}
+
+h3 {
+    font-size: var(--h3-fs);
+    line-height: var(--h3-lh);
+    letter-spacing: var(--h3-ls);
+
+    padding-bottom: .5rem;
+}
+
+.btn {
+    border-radius: 2rem;
+    border: none;
+    color: var(--btn-color);
+    text-decoration: none;
+
+    font-size: var(--btn-fs);
+    line-height: var(--btn-lh);
+    letter-spacing: var(--btn-ls);
+    font-weight: var(--header-fw);
+
+    padding: .8125rem 4rem;
+}
+
+.btn--one {
+    background-color: var(--btn-one-bg-color);
+    box-shadow: inset 0 -.25rem var(--btn-one-shadow-color);
+}
+
+.btn--two {
+    background-color: var(--btn-two-bg-color);
+    box-shadow: inset 0 -.25rem var(--btn-two-shadow-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+/* #endregion */
+
+/* #region Header */
+header {
+    display: grid;
+    justify-content: center;
+    padding: 7.75rem 7.75rem 2rem 7.75rem;
+}
+/*#endregion */
+
+/* #region hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 10rem;
+}
+
+.hero h1 {
+    padding-bottom: 1rem;
+}
+
+.hero__btn, .availability__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 3.5rem;
+}
+/* #endregion */
+
+/* #region Tracking */
+.tracking img {
+    padding: 4.5rem 0;
+}
+
+.tracking__spacing p {
+    padding-bottom: 3.5rem;
+}
+
+.tracking {
+    padding-bottom: 7.5rem;
+}
+/* #endregion */
+
+/* #region Access */
+.access img {
+    padding: 4.5rem 0 7rem 0;
+}
+
+/* #endregion */
+
+/* #region Feature */
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-p--spacing {
+    padding-bottom: 1.5rem;
+}
+
+.feature img {
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+}
+/* #endregion */
+
+/* #region Logo */
+.logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 9rem 0 7.25rem 0;
+}
+
+.logos li {
+    padding-bottom: 3.5rem;
+    width: 8.75rem;
+}
+/* #endregion */
+
+/* #region Availability */
+.availability {
+    padding-bottom: 8.5rem;
+}
+/* #endregion */
+
+/* #region Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--footer-bg-color);
+
+    padding: 3.5rem 0;
+    width: 100%;
+}
+
+footer img {
+    width: 3.5rem;
+    justify-self: center;
+}
+
+footer ul {
+    padding: 2rem 0 .5rem 0;
+}
+
+footer li {
+    padding-bottom: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--header-color);
+    font-size: var(--footer-fs);
+    line-height: var(--footer-lh);
+    letter-spacing: var(--footer-ls);
+}
+
+.socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.socials img {
+    width: 1.5rem;
+}
+
+/* #endregion */
