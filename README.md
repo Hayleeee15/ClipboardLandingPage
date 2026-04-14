@@ -43,6 +43,14 @@ Built to be responsive depending on device size.
 
 ## Update Progress
 
+### April 14th, 2026
+
+Completed Tablet Query
+
+Main changes to font size and padding
+
+Logo section was changed to row with flex-wrap
+
 ### April 12th, 2026
 
 Established a CSS Reset
