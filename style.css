@@ -18,10 +18,14 @@
     --h1-fs: 2rem;
     --h1-lh: 125%;
     --h1-ls: -0.03125rem;
+    --tablet-h1-fs: 2.5rem;
+    --tablet-h1-ls: -0.046875rem;
 
     --h2-fs: 1.75rem;
     --h2-lh: 125%;
     --h2-ls: -0.03125rem;
+    --tablet-h2-fs: 2.25rem;
+    --tablet-h2-ls: -0.0375rem;
 
     --h3-fs: 1.5rem;
     --h3-lh: 125%;
@@ -30,6 +34,7 @@
     --paragraph-fs: 1rem;
     --paragraph-lh: 150%;
     --paragraph-ls: 0.009375rem;
+    --tablet-par-fs: 1.25rem;
 
     --btn-fs: 1.25rem;
     --btn-lh: 150%;
@@ -150,7 +155,7 @@ header {
 }
 /*#endregion */
 
-/* #region hero */
+/* #region Hero */
 .hero {
     display: flex;
     flex-direction: column;
@@ -189,18 +194,15 @@ header {
 .access img {
     padding: 4.5rem 0 7rem 0;
 }
-
 /* #endregion */
 
 /* #region Feature */
-.feature {
+.feature--group{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.feature-p--spacing {
-    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 .feature img {
@@ -270,6 +272,117 @@ footer a {
 
 .socials img {
     width: 1.5rem;
+}
+
+/* #endregion */
+
+/* #region Media Queries */
+@media (min-width: 48rem) {
+/* #region Global */
+    body {
+        background: url(./images/bg-header-desktop.png)
+        no-repeat center top;
+    }
+
+    h1 {
+        font-size: var(--tablet-h1-fs);
+        letter-spacing: var(--tablet-h1-ls);
+    }
+
+    h2 {
+        font-size: var(--tablet-h2-fs);
+        letter-spacing: var(--tablet-h2-ls);
+    }
+
+    .btn {
+        padding: .8125rem 1.75rem;
+    }
+/* #endregion */
+
+/* #region Hero */
+    .hero {
+        padding: 0 2.5rem 10rem 2.5rem;
+    }
+
+    .hero p {
+        font-size: var(--tablet-par-fs);
+    }
+
+    .hero__btn, .availability__btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+/* #endregion */
+
+/* #region Tracking */
+    .tracking {
+        padding:0 3rem 7.5rem 3rem;
+    }
+
+    .large-p-fs {
+        font-size: var(--tablet-par-fs);
+    }
+
+    .tracking img {
+        padding: 6rem 0;
+    }
+
+    .tracking__spacing{
+        padding: 0 8rem;
+    }
+/* #endregion */
+
+/* #region Access */
+    .access {
+        padding: 0 3rem 7rem 3rem;
+    }
+
+    .access p {
+        font-size: var(--tablet-par-fs);
+    }
+
+    .access img {
+        padding: 4.5rem 0 0rem 0;
+    }
+/* #endregion */
+
+/* #region Feature */
+    .feature {
+        padding-bottom: 7.5rem;
+    }
+    .feature--group{
+        padding: 1.5rem 10rem 0 10rem;
+    }
+/* #endregion */
+
+/* #region Logo */
+    .logos {
+        padding: 0 0 9rem 0;
+    }
+
+    .logos ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5rem;
+
+        padding: 0;
+    }
+
+    .logos li {
+        width: 8rem;
+        padding-bottom: 0;
+    }
+/* #endregion */
+
+/* #region Availability */
+    .availability p{
+        font-size: var(--tablet-par-fs);
+    }
+/* #endregion */
+
 }
 
 /* #endregion */
