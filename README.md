@@ -43,6 +43,12 @@ Built to be responsive depending on device size.
 
 ## Update Progress
 
+### April 15th, 2026
+
+Completed Desktop Query
+
+Main changes to font size and padding
+
 ### April 14th, 2026
 
 Completed Tablet Query
