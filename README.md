@@ -25,19 +25,19 @@ Built to be responsive depending on device size.
     <b>Mobile Design:</b>
   </div>
   <div>
-  <p>WIP</p>
+  <p><img src="./images/ClipboardLandingPage_index-Mobile.png" alt="Mobile Preview" width="250"></p>
   </div>
   <div>
     <b>Tablet Design:</b>
   </div>
   <div>
-    <p>WIP</p>
+    <p><img src="./images/ClipboardLandingPage-Tablet.png" alt="Tablet Preview" width="500"></p>
   </div>
   <div>
     <b>Desktop Design:</b>
   </div>
   <div>
-    <p>WIP</p>
+    <p><img src="./images/ClipboardLandingPage-Desktop.png" alt="Desktop Preview" width="500"></p>
   </div>
 </div>
 
