@@ -1,8 +1,10 @@
 :root {
     /* Colors */
     --btn-one-bg-color: hsl(171, 66%, 44%);  /* Green 500 */
+    --btn-one-hover: #5DCCBB;                /* Green 300 */
     --btn-one-shadow-color: hsl(171, 66%, 36%);
     --btn-two-bg-color: hsl(233, 100%, 69%); /* Blue 100 */
+    --btn-two-hover: #8897FF;                /* Blue 400 */
     --btn-two-shadow-color: hsl(233, 59%, 57%);
     --btn-color: hsl(0, 0%, 100%);           /* White */
     --header-color: hsl(210, 10%, 33%);      /* Gray 700 */
@@ -20,6 +22,7 @@
     --h1-ls: -0.03125rem;
     --tablet-h1-fs: 2.5rem;
     --tablet-h1-ls: -0.046875rem;
+    --desktop-h1-fs: 2.875rem;
 
     --h2-fs: 1.75rem;
     --h2-lh: 125%;
@@ -205,6 +208,12 @@ header {
     padding-top: 1.5rem;
 }
 
+.feature--group--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .feature img {
     padding-top: 4rem;
     padding-bottom: 2.5rem;
@@ -382,7 +391,138 @@ footer a {
         font-size: var(--tablet-par-fs);
     }
 /* #endregion */
-
 }
 
+@media (min-width: 64rem) {
+/* #region Global */
+    body {
+        background: url(./images/bg-header-desktop.png)
+            no-repeat center top;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: var(--desktop-h1-fs);
+        letter-spacing: var(--tablet-h1-ls);
+    }
+
+    .btn {
+        padding: .8125rem 1.75rem;
+    }
+
+    .btn--one:hover {
+        background-color: var(--btn-one-hover);
+    }
+
+    .btn--two:hover {
+        background-color: var(--btn-two-hover);
+    }
 /* #endregion */
+
+/* #region Hero */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding:0 10rem 10rem 10rem;
+    }
+
+/* #endregion */
+
+/* #region Tracking */
+    .tracking {
+        padding:0 0 7rem 0;
+    }
+
+    .tracking__snippets {
+        padding: 0 22rem;
+    }
+
+    .tracking__container {
+        display: flex;
+        align-items: center;
+        padding-right: 8rem;
+    }
+
+    .tracking img {
+        margin-left: -2rem;
+    }
+
+    .tracking__spacing{
+        text-align: left;
+    }
+/* #endregion */
+
+/* #region Access */
+    .access {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15rem;
+    }
+
+    .access p {
+        padding: 0 9rem;
+    }
+/* #endregion */
+
+/* #region Feature */
+    .feature {
+        padding-bottom: 7.5rem;
+    }
+
+    .feature--group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .feature--group--center p {
+        padding: 0 1.25rem;
+    }
+    .feature--group--center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+/* #endregion */
+
+/* #region Footer */
+
+.footer--links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10rem;
+}
+
+footer img {
+    width: 5rem;
+    justify-self: flex-start;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 20rem 0 8rem;
+    text-align: left;
+}
+
+footer li {
+    width: 33%;
+    padding-bottom: 0;
+}
+
+.footer--links a:hover{
+    color: var(--btn-one-hover);
+}
+/* #endregion */
+
+}
+/* #endregion */
+
